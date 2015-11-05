@@ -21,20 +21,18 @@ class CustomCar(car.Car):
         return:
             tires(lists): number of tires on the car
 
-        exampls:
+        examples:
             >>> mycar = CustomCar()
             >>> len(mycar.tires)
             4
 
       """
         car.Car.__init__(self, color)
-        self.color = color
         self.tires = tires
-        tire = CustomTire()
         if self.tires is None:
             self.tires = []
             while len(self.tires) < 4:
-                self.tires.append(tire)
+                self.tires.append(CustomTire())
 
 
 class CustomTire(car.Tire):
