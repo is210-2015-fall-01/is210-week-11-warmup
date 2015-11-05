@@ -14,11 +14,11 @@ class CustomCar(car.Car):
         None
     """
 
-    def __init__(self, color='BabyBlue' tires=None):
-        """constructor of CustomCar class
+    def __init__(self, color='BabyBlue', tires=None):
+        """Constructor of CustomCar class
         args:
             tires(int): number of tires
-            color(str): color of car default 'BabyBlue'
+            color(str):color of car default 'BabyBlue'
         attributes:
             tires(int): number of tires
         return:
@@ -36,14 +36,14 @@ class CustomCar(car.Car):
         if self.tires is None:
             self.tires = []
             while len(self.tires) < 4:
-               self.tires.append(CustomTire())
+                self.tires.append(CustomTire())
 
 
 class CustomTire(car.Tire):
-        """Max Miles
+    """Max Miles
     args:
-        car.tire(): car stats
+    car.tire(): car stats
     attributes:
-         __maximum_miles(int): max miles default 500
-        """
-        __maximum_miles = 500
+    __maximum_miles(int): max miles default 500
+    """
+    __maximum_miles = 500
