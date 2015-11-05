@@ -6,8 +6,15 @@ import time
 
 
 class Snapshot(object):
-    """Unix timestamp."""
+    """Unix timestamp.
+    Attributes: None
+    """
 
     def __init__(self):
-        """Constructor for Snapshot() class."""
+        """Constructor for Snapshot() class.
+        Args:
+            time(int): Unix timestamp
+        Attributes:
+            time(int): Unix timestamp
+        """
         self.created = time.time()
