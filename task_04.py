@@ -14,10 +14,11 @@ class CustomCar(car.Car):
         None
     """
 
-    def __init__(self, tires=None):
+    def __init__(self, color='BabyBlue' tires=None):
         """constructor of CustomCar class
         args:
             tires(int): number of tires
+            color(str): color of car default 'BabyBlue'
         attributes:
             tires(int): number of tires
         return:
@@ -29,7 +30,7 @@ class CustomCar(car.Car):
             >>> isinstance(mycar.tires[0], CustomTire)
             True
         """
-        car.Car.__init__(self)
+        car.Car.__init__(self, color)
         self.tires = tires
 
         if self.tires is None:
