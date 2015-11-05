@@ -27,7 +27,7 @@ class CustomCar(car.Car):
             4
 
       """
-        car.Car.__init__(self, Color)
+        car.Car.__init__(self, color)
         self.color = color
         self.tires = tires
         tire = CustomTire()
