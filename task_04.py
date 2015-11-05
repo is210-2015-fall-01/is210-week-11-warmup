@@ -16,6 +16,10 @@ class CustomCar(car.Car):
         Attributes:
             car.Car (class): Calls the Car() class.
             tires (list): CustomTire objects to determine miles on Tires.
+             examples:
+             >>> mycar = CustomCar()
+             >>> len(mycar.tires)
+             4
         """
         car.Car.__init__(self, color)
         self.tires = tires
