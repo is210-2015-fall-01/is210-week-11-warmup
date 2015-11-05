@@ -27,10 +27,10 @@ class CustomCar(car.Car):
             4
 
       """
-        car.Car.__init__(self)
+        car.Car.__init__(self, Color)
+        self.color = color
         self.tires = tires
-        tire = CustomTire(tires)
-
+        tire = CustomTire()
         if self.tires is None:
             self.tires = []
             while len(self.tires) < 4:
