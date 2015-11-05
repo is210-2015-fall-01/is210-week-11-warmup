@@ -9,7 +9,7 @@ import car
 class CustomCar(car.Car):
     """ a new version of the car class"""
 
-    def __init__(self, tires=None):
+    def __init__(self, color='blue', tires=None):
         """constructor of CustomCar class
 
         args:
