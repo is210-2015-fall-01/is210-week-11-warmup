@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""Starter data module"""
+"""Creating a dream Car, tires included."""
 
 
 import car
