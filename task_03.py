@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""A snapshot in time."""
+"""An apple a day."""
 
 
 import produce
