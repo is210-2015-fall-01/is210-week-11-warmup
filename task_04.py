@@ -18,12 +18,12 @@ class CustomCar(car.Car):
         Attributes:
             tires: defaults to None
         """
-    car.Car.__init__(self, color)
-    self.tires = tires
-    if self.tires is None:
-        self.tires = []
-        while len(self.tires) < 4:
-            self.tires.append(CustomTire())
+        car.Car.__init__(self, color)
+        self.tires = tires
+        if self.tires is None:
+            self.tires = []
+            while len(self.tires) < 4:
+                self.tires.append(CustomTire())
 
 
 class CustomTire(car.Tire):
