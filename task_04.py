@@ -9,15 +9,15 @@ class CustomCar(car.Car):
     """CustomCar inherits from car.Car."""
 
     def __init__(self, color='orange', tires=None):
-    """Explains the args and attributes.
+        """Explains the args and attributes.
 
-    Args:
-        Color: defaults to 'orange'
-        tires: defaults to None
+        Args:
+            Color: defaults to 'orange'
+            tires: defaults to None
 
-    Attributes:
-        tires: defaults to None
-    """
+        Attributes:
+            tires: defaults to None
+        """
     car.Car.__init__(self, color)
     self.tires = tires
     if self.tires is None:
